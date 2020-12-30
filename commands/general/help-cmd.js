@@ -16,7 +16,7 @@ module.exports = {
           { name: `Community`, value: '`advice`, `announce`, `avatar`, `invite`, `poll`, `quote`, `say` `userinfo`', inline: false },
           { name: `Moderation`, value: '`ban`, `kick`, `mute`, `unmute`, `warn`', inline: false },
           { name: `Server Management`, value: '`addrole`, `removerole`, `giveaway`, `lock`, `unlock`, `purge`, `voicechannelgenerator`', inline: false },
-          { name: `Utilities`, value: '`setprefix`, `resetprefix`, `severinvite`[(i)](${message.url} "You can do serverinvite permanent for permanent invite"), `stealemoji`', inline: false },
+          { name: `Utilities`, value: '`setprefix`, `resetprefix`, `severinvite`, `stealemoji`', inline: false },
           { name: `Reddit`, value: '`animemes`, `food`, `meme`, `pets`, `pokemonmeme`, `waifu`', inline: false },
           { name: `Economy`, value: '`balance`, `beg`, `daily`, `rob`, `work`', inline: false },
           { name: `Emoji`, value: '`abuse`, `angry`, `heheboi`, `hug`, `hyperthink`, `pog`, `POGU`, `suicide`, `thonk`, `wasntme`', inline: false },
