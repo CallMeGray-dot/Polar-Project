@@ -9,7 +9,7 @@ Please read the liscence if your gonna use this
 
 Economy System:
 
-MIT License
+```MIT License
 
 Copyright (c) 2019 chxlls
 
