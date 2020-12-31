@@ -14,7 +14,7 @@ somethingRandom.getMeme(randomSubReddit).then(res => {
     .setTitle(res.title)
     .setURL(`https://www.reddit.com/r/${randomSubReddit}`)
     .setImage(res.img)
-    .setFooter(`👍 ${res.upvotes} | 💬 ${res.comments}`)
+    .setFooter(`👍 ${res.upvotes} | 👎 ${res.downvotes} | 💬 ${res.comments}`)
     .setAuthor(`From ${res.author}`)
     .setColor('RANDOM')
     message.channel.send(embed)

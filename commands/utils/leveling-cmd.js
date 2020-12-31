@@ -1,7 +1,7 @@
 module.exports = {
     commands: ['togglelevels'],
     description: 'Turns on or off the leveling system',
-    permissions: ['ADMINISTRATOR'],
+    permissions: ['MANAGE_GUILD'],
 callback: (message) => {
     const db = require('quick.db')
     const bool = db.fetch(`leveling_${message.guild.id}`)

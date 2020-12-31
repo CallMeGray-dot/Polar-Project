@@ -8,7 +8,7 @@ module.exports = {
     usage: '<new prefix>',
     minArgs: 1,
     maxArgs: null,
-    permissions: ['ADMINISTRATOR'],
+    permissions: ['MANAGE_GUILD'],
     requiredRoles: [],
     callback: (message, args) => {
         const newPrefix = args.join(' ')

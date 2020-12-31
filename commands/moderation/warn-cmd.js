@@ -13,7 +13,7 @@ module.exports = {
       if(!reason) reason = 'No reason provided'
       
       message.channel.send(`${user.tag} has been warned. Reason: ${reason}`).then(() => {
-          user.send(`You have been warned by @${message.author.id}. Reason: ${reason}`)
+          user.send(`You have been warned by <@${message.author.id}>. Reason: ${reason}`)
       })
   }
 }

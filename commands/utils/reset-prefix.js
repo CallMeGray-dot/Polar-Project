@@ -5,7 +5,7 @@ const { MessageEmbed } = require('discord.js')
 
 module.exports = {
   commands: ['resetprefix'],
-  permissions: ['ADMINISTRATOR'],
+  permissions: ['MANAGE_GUILD'],
   callback: (message) => {
   const prefix = botPrefix.getPrefix(message.guild.id)
   botPrefix.setPrefix('p!')
