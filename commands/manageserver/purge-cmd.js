@@ -9,6 +9,7 @@ module.exports = {
   permissions: ['MANAGE_MESSAGES'],
   requiredRoles: [],
   callback: async (message, args) => {
+    message.delete()
     const deleteCount = parseInt(args[0], 10)
 
     if (isNaN(deleteCount) || deleteCount < 2 || deleteCount > 100)
