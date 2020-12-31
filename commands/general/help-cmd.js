@@ -5,7 +5,7 @@ module.exports = {
   commands: ['help', 'cmds', 'commands', 'h'],
   description: 'Displays help menu',
   callback: (message, args) => {
-
+      message.channel.send('Sent you a DM with all the information needed :thumbsup:')
       const help = new Discord.MessageEmbed()
         .setTitle('Commands')
         .setDescription(`Do \`p!commandhelp <command>\` to show info about the command! [(i)](${message.url} "There are a lot of commands than you think")`)
