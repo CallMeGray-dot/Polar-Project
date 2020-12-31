@@ -26,6 +26,6 @@ module.exports = {
           { name: `Others`, value: '`ascii`, `clydetext`, `hug`, `slap`, `spank`', inline: false },
         );
       
-    message.channel.send(help)
+    message.author.send(help)
     }
   }
