@@ -20,7 +20,7 @@ client.on('ready', () => {
       activity: {
         name: `p!help • ${client.guilds.cache.size} servers`,
         type: 'STREAMING',
-        url: 'https://twitch.tv/yunibotdiscord'
+        url: 'https://twitch.tv/callmegraythegr8'
       }
     })
     welcome(client)
@@ -55,7 +55,7 @@ client.user.setPresence({
    activity: {
       name: `p!help • ${client.guilds.cache.size} servers`,
       type: 'STREAMING',
-        url: 'https://twitch.tv/yunibotdiscord'
+        url: 'https://twitch.tv/callmegraythegr8'
     }
   })
 })
@@ -66,7 +66,7 @@ client.user.setPresence({
     activity: {
       name: `p!help • ${client.guilds.cache.size} servers`,
       type: 'STREAMING',
-        url: 'https://twitch.tv/yunibotdiscord'
+        url: 'https://twitch.tv/callmegraythegr8'
     }
   })
 })    
