@@ -5,6 +5,7 @@ const client = new Discord.Client()
 const botPrefix = require('discord-prefix')
 const welcome = require('./util/welcome')
 const { levelSys } = require('./util/features')
+const chatbot = require('./util/chatbot')
 
 // Command Handling
 const path = require('path')
@@ -25,6 +26,7 @@ client.on('ready', () => {
     })
     welcome(client)
     levelSys(client)
+    chatbot(client)
   })
 
     
@@ -156,4 +158,14 @@ client.on('guildDelete', guild =>{
       .setFooter(`I'm In ${client.guilds.cache.size} Guilds Now!`);
   channel.send(embed);
 });
+const snipes = require("./snipe.json")
+const snip = require("./snipes.js")
+
+client.on('messageDelete',async message => {
+  const args = message.content.split(" ");
+ const author = message.author.id;
+ const time = message.createdAt;
+  const icon = message.author.displayAvatarURL();
+  snip.run(message,args,client,author,time,icon) 
+})
 client.login(process.env.TOKEN)

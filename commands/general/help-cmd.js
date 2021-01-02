@@ -1,5 +1,4 @@
 const Discord = require('discord.js')
-const botPrefix = require('discord-prefix')
 
 module.exports = {
   commands: ['help', 'cmds', 'commands', 'h'],
@@ -16,7 +15,7 @@ module.exports = {
           { name: `Community`, value: '`advice`, `announce`, `avatar`, `invite`, `poll`, `quote`, `say` `userinfo`', inline: false },
           { name: `Moderation`, value: '`ban`, `kick`, `mute`, `unmute`, `warn`', inline: false },
           { name: `Server Management`, value: '`addrole`, `removerole`, `giveaway`, `lock`, `unlock`, `purge`, `voicechannelgenerator`', inline: false },
-          { name: `Utilities`, value: '`setprefix`, `resetprefix`, `severinvite`, `stealemoji`, `embed`', inline: false },
+          { name: `Utilities`, value: '`setprefix`, `resetprefix`, `severinvite`, `stealemoji`, `embed`, `snipe`', inline: false },
           { name: `Reddit`, value: '`animemes`, `food`, `meme`, `pets`, `pokemonmeme`, `waifu`', inline: false },
           { name: `Economy`, value: '`balance`, `beg`, `daily`, `rob`, `work`', inline: false },
           { name: `Emoji`, value: '`abuse`, `angry`, `heheboi`, `hug`, `hyperthink`, `pog`, `POGU`, `suicide`, `thonk`, `wasntme`', inline: false },
