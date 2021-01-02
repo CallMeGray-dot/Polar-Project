@@ -14,6 +14,5 @@ module.exports = {
     let snipez = JSON.stringify(snipe);
 fs.writeFile("./snipe.json", snipez, (err) => console.error)
 
-
   }
 }

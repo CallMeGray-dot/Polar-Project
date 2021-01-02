@@ -11,7 +11,7 @@ module.exports = {
         .setColor('RANDOM')
         .setFooter(`Here are the commands!`)
         .addFields(
-          { name: `General`, value: '`help`, `minecraftip`, `ping`, `serverinfo`, `sourcecode`, `botinfo`, `website`', inline: false },
+          { name: `General`, value: '`help`, `minecraftip`, `ping`, `serverinfo`, `sourcecode`, `botinfo`, `website`, `general`, `feedback`', inline: false },
           { name: `Community`, value: '`advice`, `announce`, `avatar`, `invite`, `poll`, `quote`, `say` `userinfo`', inline: false },
           { name: `Moderation`, value: '`ban`, `kick`, `mute`, `unmute`, `warn`', inline: false },
           { name: `Server Management`, value: '`addrole`, `removerole`, `giveaway`, `lock`, `unlock`, `purge`, `voicechannelgenerator`', inline: false },

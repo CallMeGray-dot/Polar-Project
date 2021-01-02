@@ -32,6 +32,7 @@
     "request": "^2.88.2",
     "typescript": "^4.1.2",
     "some-random-cat": "^2.2.0",
-    "minecraft-server-util": "^3.4.2"
+    "minecraft-server-util": "^3.4.2",
+    "randomstring": "^1.1.5"
   }
 }

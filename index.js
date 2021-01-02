@@ -14,6 +14,8 @@ const fs = require('fs')
 const EventEmitter = require('events')
 EventEmitter.defaultMaxListeners = 1000
 
+const firstMessage = require('./util/message')
+
 client.on('ready', () => {
 		console.log(`Logged in as ${client.user.tag}!`);
 
