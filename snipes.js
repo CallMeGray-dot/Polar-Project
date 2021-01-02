@@ -14,9 +14,6 @@ module.exports = {
     let snipez = JSON.stringify(snipe);
 fs.writeFile("./snipe.json", snipez, (err) => console.error)
 
-      
-      message.channel.send("Someone deleted a message do p!snipe to see the deleted message");
-
 
   }
 }
