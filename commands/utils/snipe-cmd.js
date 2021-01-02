@@ -7,15 +7,12 @@ module.exports = {
       if(!snipe[message.channel.id]) return message.channel.send("Nice Try, but nobody here deleted messages.")
        let msg = snipe[message.channel.id].msg; 
       let author = snipe[message.channel.id].user; 
-      let icon = snipe[message.channel.id].icon; 
        const embed = new MessageEmbed()
        .setTitle(`Someone deleted a message!`)
        .addField("User: ", `<@${author}>`)
        .addField("Message: ", `${msg}`)
        .setColor("RANDOM")
-       .setFooter(`${time}`)
        .setTimestamp()
-       .setThumbnail(icon) 
     message.channel.send(embed)
 
     }
