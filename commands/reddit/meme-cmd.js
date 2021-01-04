@@ -1,27 +1,21 @@
-const { MessageEmbed } = require('discord.js');
-const somethingRandom = require('some-random-cat').Random
+const Discord = require('discord.js')
+const fetch = require('node-fetch')
 
 module.exports = {
-commands: ['meme', 'memes', 'memepls'],
-description: 'Sends a random meme',
-callback: (message, args) => {
-const subreddits = [
-    "meme",
-    "memes",
-    "dankmemes",
-    "meirl"
-]
-let randomSubReddit = subreddits[Math.floor(Math.random() * subreddits.length)] 
-somethingRandom.getMeme(randomSubReddit).then(res => {
-    const embed = new MessageEmbed()
-    .setTitle(res.title)
-    .setURL(`https://www.reddit.com/r/${randomSubReddit}`)
-    .setImage(res.img)
-    .setFooter(`👍 ${res.upvotes} | 👎 ${res.downvotes} | 💬 ${res.comments}`)
-    .setAuthor(`From ${res.author}`)
-    .setColor('RANDOM')
-    message.channel.send(embed)
-    console.log(res)
-}).catch(e => message.channel.send('API Error.'))
- }
-}
+  commands: ['meme'],
+  description: 'Shows random meme',
+  callback: async (message, args) => {
+    const json = await (
+      await fetch("https://meme-api.herokuapp.com/gimme")
+    ).json();
+
+    message.channel.send(
+      new Discord.MessageEmbed()
+        .setTitle(json.title.slice(0, 256))
+        .setImage(json.url)
+        .setDescription(`[r/${json.subreddit}](${json.postLink})`)
+        .setColor("RANDOM")
+        .setFooter(`Meme by: ${json.author} | 👍 ${json.ups}`)
+     );
+    }
+  }
