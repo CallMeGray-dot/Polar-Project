@@ -19,6 +19,7 @@ module.exports = {
 
     const fetched = await message.channel.messages.fetch({ limit: deleteCount })
 
+    message.delete()
     message.channel.bulkDelete(fetched)
     const success = new MessageEmbed()
       .setTitle(`Successfully purged ${deleteCount} messages!`)
