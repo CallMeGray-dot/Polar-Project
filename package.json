@@ -1,6 +1,6 @@
 {
-  "name": "Yuni",
-  "version": "1.8.0",
+  "name": "Polar",
+  "version": "1.0.4",
   "description": "Just A Normal Cool Bot",
   "main": "bot.js",
   "scripts": {
