@@ -17,12 +17,12 @@ let helpMenu = new Menu(message.channel, message.author.id, [
         .setFooter('Page 1/12 | General Commands')
         .setColor('RANDOM')
         .addFields(
-        { name: `${prefix}help`, value: 'Shows command list'},
-        { name: `${prefix}ping`, value: 'Shows latency'},
-        { name: `${prefix}serverinfo`, value: 'Shows server info'},
-        { name: `${prefix}sourcecode`, value: 'Shows bots source code'},
-        { name: `${prefix}botinfo`, value: 'Shows bot info'},
-        { name: `${prefix}website`, value: 'Shows bots website' },
+        { name: `${prefix}help`, value: 'Shows all commands in a list'},
+        { name: `${prefix}ping`, value: 'Shows latency of API and your ping'},
+        { name: `${prefix}serverinfo`, value: 'Shows server info of the guild'},
+        { name: `${prefix}sourcecode`, value: 'Shows bots source code in github'},
+        { name: `${prefix}botinfo`, value: 'Shows bot information'},
+        { name: `${prefix}website`, value: 'Shows bots website created' },
         { name: `${prefix}feedback`, value: 'Sends feedback in support server'}
 )
         
@@ -40,14 +40,15 @@ let helpMenu = new Menu(message.channel, message.author.id, [
         .setFooter('Page 2/12 | Community')
         .setThumbnail('https://cdn.discordapp.com/attachments/790147784266481674/795832330215620648/Polar.png')
         .addFields(
-        { name: `${prefix}advice`, value: 'Shows random advice'},
-        { name: `${prefix}announce <channel> <message>`, value: 'Announces the message in the channel mentiones'},
-        { name: `${prefix}avatar [user]`, value: 'Shows avatar'},
+        { name: `${prefix}advice`, value: 'Sends random advice'},
+        { name: `${prefix}announce <channel> <message>`, value: 'Announces the message in the channel mentioned'},
+        { name: `${prefix}avatar [user]`, value: 'Shows avatar of user or your\'s mentioned'},
         { name: `${prefix}invite`, value: 'Shows invite links of polar and Support server'},
-        { name: `${prefix}poll <question>`, value: 'Starts a new poll'},
-        { name: `${prefix}quote`, value: 'Shows random quote'},
-        { name: `${prefix}say <message>`, value: 'Repeats inputed message'},
-        { name: `${prefix}userinfo [user]`, value: 'Shows user info'},
+        { name: `${prefix}poll <question>`, value: 'Starts a new poll with reactions'},
+        { name: `${prefix}quote`, value: 'Sends random quotes from authors'},
+        { name: `${prefix}say <message>`, value: 'Repeats inputed message sent'},
+        { name: `${prefix}userinfo [user]`, value: 'Shows user information'},
+        { name: `${prefix}vote`, value: 'Shows vote links for bot'}
         )
          
         ,
@@ -67,9 +68,9 @@ let helpMenu = new Menu(message.channel, message.author.id, [
         .addFields(
         { name: `${prefix}ban <user> [reason]`, value: 'Bans a user out of a guild'},
         { name: `${prefix}kick <user> [reason]`, value: 'Kicks a user out of a guild'},
-        { name: `${prefix}mute <user>`, value: 'Mutes a user'},
-        { name: `${prefix}unmute <user>`, value: 'Unmutes a user'},
-        { name: `${prefix}warn <user> [reason]`, value: 'Warns a user'}
+        { name: `${prefix}mute <user>`, value: 'Mutes a user from a guild'},
+        { name: `${prefix}unmute <user>`, value: 'Unmutes a user from a guild'},
+        { name: `${prefix}warn <user> [reason]`, value: 'Warns a user from a guild'}
 )
         ,
         reactions:{  
@@ -113,7 +114,7 @@ let helpMenu = new Menu(message.channel, message.author.id, [
         { name: `${prefix}serverinvite [permanent]`, value: 'Makes a server invite'},
         { name: `${prefix}stealemoji <emoji>`, value: 'Steals the emoji inputted'},
         { name: `${prefix}embed`, value: 'Makes a new embed'},
-        { name: `${prefix}snipe`, value: 'Shows the deleted message'}
+        { name: `${prefix}snipe`, value: 'Shows the recently deleted message'}
 )
         ,
         reactions:{  
@@ -198,9 +199,9 @@ let helpMenu = new Menu(message.channel, message.author.id, [
         .setDescription(`Do \`${prefix}commandhelp <command>\` to show info about the command`)
         .setFooter('Page 9/12 | Games')
         .addFields(
-        { name: `${prefix}8ball <question>?`, value: 'Answers your question'},
+        { name: `${prefix}8ball <question>?`, value: 'Answers your question inputted'},
         { name: `${prefix}amonguscode`, value: 'Sends the game info (amongus)'},
-        { name: `${prefix}tictactoe <user>`, value: 'Starts a tictactoe game'},
+        { name: `${prefix}tictactoe <user>`, value: 'Starts a tictactoe game with the user mentiones'},
         { name: `${prefix}waterdrop`, value: 'Starts a waterdrop game'},
 )
         ,
@@ -218,8 +219,8 @@ let helpMenu = new Menu(message.channel, message.author.id, [
         .setDescription(`Do \`${prefix}commandhelp <command>\` to show info about the command`)
         .setFooter('Page 10/12 | Leveling')
         .addFields(
-        { name: `${prefix}level [user]`, value: 'Sneds user level'},
-        { name: `${prefix}togglelevels`, value: 'Toggles the leveling'},
+        { name: `${prefix}level [user]`, value: 'Sends user\'s level'},
+        { name: `${prefix}togglelevels`, value: 'Toggles the leveling system on/off'},
 )
         ,
         reactions:{  
@@ -228,16 +229,17 @@ let helpMenu = new Menu(message.channel, message.author.id, [
     }
     },
 {
-        name: "Leveling",
+        name: "Ratings",
         content: new MessageEmbed()
         .setTitle('Command list')
         .setDescription(`Do \`${prefix}commandhelp <command>\` to show info about the command`)
-        .setFooter('Page 10/12 | Leveling')
+        .setFooter('Page 10/12 | Ratings')
         .setThumbnail('https://cdn.discordapp.com/attachments/790147784266481674/795832330215620648/Polar.png')
         .setColor('RANDOM')
         .addFields(
-        { name: `${prefix}level [user]`, value: 'Sends users level'},
-        { name: `${prefix}togglelevels`, value: 'Toggles leveling system'},
+        { name: `${prefix}gay <user>`, value: 'Shows how gay user is'},
+        { name: `${prefix}pogmeter <user>`, value: 'Shows how pog the user is'},
+        { name: `${prefix}simp <user>`, value: 'Shows how simp the user is'}
 )
         ,
         reactions:{  
