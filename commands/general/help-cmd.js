@@ -14,7 +14,7 @@ let helpMenu = new Menu(message.channel, message.author.id, [
         .setTitle('Command list')
         .setThumbnail('https://cdn.discordapp.com/attachments/792313563800666125/796522174378541066/image0.png')
         .setDescription(`Do \`${prefix}commandhelp <command>\` to show info about the command`)
-        .setFooter('Page 1/12 | General Commands')
+        .setFooter('Page 1/13 | General Commands')
         .setColor('RANDOM')
         .addFields(
         { name: `${prefix}help`, value: 'Shows all commands in a list'},
@@ -28,7 +28,8 @@ let helpMenu = new Menu(message.channel, message.author.id, [
         
         ,
         reactions:{
-        '▶': "next"
+        '▶': "next",
+        '⏩': "last"
         }
         },
     {
@@ -37,7 +38,7 @@ let helpMenu = new Menu(message.channel, message.author.id, [
         .setTitle('Command list')
         .setColor('RANDOM')
         .setDescription(`Do \`${prefix}commandhelp <command>\` to show info about the command`)
-        .setFooter('Page 2/12 | Community')
+        .setFooter('Page 2/13 | Community')
         .setThumbnail('https://cdn.discordapp.com/attachments/792313563800666125/796522174378541066/image0.png')
         .addFields(
         { name: `${prefix}advice`, value: 'Sends random advice'},
@@ -53,8 +54,10 @@ let helpMenu = new Menu(message.channel, message.author.id, [
          
         ,
         reactions:{  
+        '⏪': 'first',
         '◀': 'previous', 
-        '▶': "next"
+        '▶': "next",
+        '⏩': "last"
     }
     },
     {
@@ -63,7 +66,7 @@ let helpMenu = new Menu(message.channel, message.author.id, [
         .setTitle('Command list')
         .setColor('RANDOM')
         .setThumbnail('https://cdn.discordapp.com/attachments/792313563800666125/796522174378541066/image0.png')
-        .setFooter('Page 3/12 | Moderation')
+        .setFooter('Page 3/13 | Moderation')
         .setDescription(`Do \`${prefix}commandhelp <command>\` to show info about the command`)
         .addFields(
         { name: `${prefix}ban <user> [reason]`, value: 'Bans a user out of a guild'},
@@ -74,8 +77,10 @@ let helpMenu = new Menu(message.channel, message.author.id, [
 )
         ,
         reactions:{  
-        '◀': 'previous',
-        '▶': "next"
+        '⏪': 'first',
+        '◀': 'previous', 
+        '▶': "next",
+        '⏩': "last"
     }
     },
 {
@@ -85,7 +90,7 @@ let helpMenu = new Menu(message.channel, message.author.id, [
         .setDescription(`Do \`${prefix}commandhelp <command>\` to show info about the command`)
         .setColor('RANDOM')
         .setThumbnail('https://cdn.discordapp.com/attachments/792313563800666125/796522174378541066/image0.png')
-        .setFooter('Page 4/12 | Server Management')
+        .setFooter('Page 4/13 | Server Management')
         .addFields(
         { name: `${prefix}addrole <user> <role>`, value: 'Adds a role to the user mentioned'},
         { name: `${prefix}removerole <user> <role>`, value: 'Removes a role from the user mentioned'},
@@ -96,15 +101,17 @@ let helpMenu = new Menu(message.channel, message.author.id, [
 )
         ,
         reactions:{  
-        '◀': 'previous',
-        '▶': "next"
+        '⏪': 'first',
+        '◀': 'previous', 
+        '▶': "next",
+        '⏩': "last"
     }
     },
 {
         name: "Utilities",
         content: new MessageEmbed()
         .setTitle('Command list')
-        .setFooter('Page 5/12 | Utilities')
+        .setFooter('Page 5/13 | Utilities')
         .setThumbnail('https://cdn.discordapp.com/attachments/792313563800666125/796522174378541066/image0.png')
         .setDescription(`Do \`${prefix}commandhelp <command>\` to show info about the command`)
         .setColor('RANDOM')
@@ -118,8 +125,10 @@ let helpMenu = new Menu(message.channel, message.author.id, [
 )
         ,
         reactions:{  
-        '◀': 'previous',
-        '▶': "next"
+        '⏪': 'first',
+        '◀': 'previous', 
+        '▶': "next",
+        '⏩': "last"
     }
     },
 {
@@ -129,7 +138,7 @@ let helpMenu = new Menu(message.channel, message.author.id, [
         .setColor('RANDOM')
         .setThumbnail('https://cdn.discordapp.com/attachments/792313563800666125/796522174378541066/image0.png')
         .setDescription(`Do \`${prefix}commandhelp <command>\` to show info about the command`)
-        .setFooter('Page 6/12 | Reddit')
+        .setFooter('Page 6/13 | Reddit')
         .addFields(
         { name: `${prefix}animemes`, value: 'Sends a random anime meme'},
         { name: `${prefix}food`, value: 'Sends random food'},
@@ -140,8 +149,10 @@ let helpMenu = new Menu(message.channel, message.author.id, [
 )
         ,
         reactions:{  
-        '◀': 'previous',
-        '▶': "next"
+        '⏪': 'first',
+        '◀': 'previous', 
+        '▶': "next",
+        '⏩': "last"
     }
     },
 {
@@ -151,7 +162,7 @@ let helpMenu = new Menu(message.channel, message.author.id, [
         .setColor('RANDOM')
         .setThumbnail('https://cdn.discordapp.com/attachments/792313563800666125/796522174378541066/image0.png')
         .setDescription(`Do \`${prefix}commandhelp <command>\` to show info about the command`)
-        .setFooter('Page 7/12 | Economy')
+        .setFooter('Page 7/13 | Economy')
         .addFields(
         { name: `${prefix}balance [user]`, value: 'Shows balance of user'},
         { name: `${prefix}beg`, value: 'Begs and get money'},
@@ -161,8 +172,10 @@ let helpMenu = new Menu(message.channel, message.author.id, [
 )
         ,
         reactions:{  
-        '◀': 'previous',
-        '▶': "next"
+        '⏪': 'first',
+        '◀': 'previous', 
+        '▶': "next",
+        '⏩': "last"
     }
     },
 {
@@ -172,7 +185,7 @@ let helpMenu = new Menu(message.channel, message.author.id, [
         .setColor('RANDOM')
         .setThumbnail('https://cdn.discordapp.com/attachments/792313563800666125/796522174378541066/image0.png')
         .setDescription(`Do \`${prefix}commandhelp <command>\` to show info about the command`)
-        .setFooter('Page 8/12 | Emoji')
+        .setFooter('Page 8/13 | Emoji')
         .addFields(
         { name: `${prefix}abuse`, value: 'Shows abuse emoji'},
         { name: `${prefix}angry`, value: 'Shows angry emoji'},
@@ -186,8 +199,10 @@ let helpMenu = new Menu(message.channel, message.author.id, [
 )
         ,
         reactions:{  
-        '◀': 'previous',
-        '▶': "next"
+        '⏪': 'first',
+        '◀': 'previous', 
+        '▶': "next",
+        '⏩': "last"
     }
     },
 {
@@ -197,7 +212,7 @@ let helpMenu = new Menu(message.channel, message.author.id, [
         .setColor('RANDOM')
         .setThumbnail('https://cdn.discordapp.com/attachments/792313563800666125/796522174378541066/image0.png')
         .setDescription(`Do \`${prefix}commandhelp <command>\` to show info about the command`)
-        .setFooter('Page 9/12 | Games')
+        .setFooter('Page 9/13 | Games')
         .addFields(
         { name: `${prefix}8ball <question>?`, value: 'Answers your question inputted'},
         { name: `${prefix}amonguscode`, value: 'Sends the game info (amongus)'},
@@ -206,8 +221,10 @@ let helpMenu = new Menu(message.channel, message.author.id, [
 )
         ,
         reactions:{  
-        '◀': 'previous',
-        '▶': "next"
+        '⏪': 'first',
+        '◀': 'previous', 
+        '▶': "next",
+        '⏩': "last"
     }
     },
 {
@@ -217,15 +234,17 @@ let helpMenu = new Menu(message.channel, message.author.id, [
         .setThumbnail('https://cdn.discordapp.com/attachments/792313563800666125/796522174378541066/image0.png')
         .setColor('RANDOM')
         .setDescription(`Do \`${prefix}commandhelp <command>\` to show info about the command`)
-        .setFooter('Page 10/12 | Leveling')
+        .setFooter('Page 10/13 | Leveling')
         .addFields(
         { name: `${prefix}level [user]`, value: 'Sends user\'s level'},
         { name: `${prefix}togglelevels`, value: 'Toggles the leveling system on/off'},
 )
         ,
         reactions:{  
-        '◀': 'previous',
-        '▶': "next"
+        '⏪': 'first',
+        '◀': 'previous', 
+        '▶': "next",
+        '⏩': "last"
     }
     },
 {
@@ -243,8 +262,10 @@ let helpMenu = new Menu(message.channel, message.author.id, [
 )
         ,
         reactions:{  
-        '◀': 'previous',
-        '▶': "next"
+        '⏪': 'first',
+        '◀': 'previous', 
+        '▶': "next",
+        '⏩': "last"
     }
     },
 {
@@ -263,8 +284,10 @@ let helpMenu = new Menu(message.channel, message.author.id, [
 )
         ,
         reactions:{  
-        '◀': 'previous',
-        '▶': "next"
+        '⏪': 'first',
+        '◀': 'previous', 
+        '▶': "next",
+        '⏩': "last"
     }
     },
 {
@@ -284,7 +307,8 @@ let helpMenu = new Menu(message.channel, message.author.id, [
 )
         ,
         reactions:{  
-        '◀': 'previous',
+        '⏪': 'first',
+        '◀': 'previous', 
     }
     },
     ], 300000)
