@@ -12,7 +12,7 @@ let helpMenu = new Menu(message.channel, message.author.id, [
         name: 'General',
         content: new MessageEmbed()
         .setTitle('Command list')
-        .setThumbnail('https://cdn.discordapp.com/attachments/790147784266481674/795832330215620648/Polar.png')
+        .setThumbnail('https://cdn.discordapp.com/attachments/792313563800666125/796522174378541066/image0.png')
         .setDescription(`Do \`${prefix}commandhelp <command>\` to show info about the command`)
         .setFooter('Page 1/12 | General Commands')
         .setColor('RANDOM')
@@ -38,7 +38,7 @@ let helpMenu = new Menu(message.channel, message.author.id, [
         .setColor('RANDOM')
         .setDescription(`Do \`${prefix}commandhelp <command>\` to show info about the command`)
         .setFooter('Page 2/12 | Community')
-        .setThumbnail('https://cdn.discordapp.com/attachments/790147784266481674/795832330215620648/Polar.png')
+        .setThumbnail('https://cdn.discordapp.com/attachments/792313563800666125/796522174378541066/image0.png')
         .addFields(
         { name: `${prefix}advice`, value: 'Sends random advice'},
         { name: `${prefix}announce <channel> <message>`, value: 'Announces the message in the channel mentioned'},
@@ -62,7 +62,7 @@ let helpMenu = new Menu(message.channel, message.author.id, [
         content: new MessageEmbed()
         .setTitle('Command list')
         .setColor('RANDOM')
-        .setThumbnail('https://cdn.discordapp.com/attachments/790147784266481674/795832330215620648/Polar.png')
+        .setThumbnail('https://cdn.discordapp.com/attachments/792313563800666125/796522174378541066/image0.png')
         .setFooter('Page 3/12 | Moderation')
         .setDescription(`Do \`${prefix}commandhelp <command>\` to show info about the command`)
         .addFields(
@@ -84,7 +84,7 @@ let helpMenu = new Menu(message.channel, message.author.id, [
         .setTitle('Command list')
         .setDescription(`Do \`${prefix}commandhelp <command>\` to show info about the command`)
         .setColor('RANDOM')
-        .setThumbnail('https://cdn.discordapp.com/attachments/790147784266481674/795832330215620648/Polar.png')
+        .setThumbnail('https://cdn.discordapp.com/attachments/792313563800666125/796522174378541066/image0.png')
         .setFooter('Page 4/12 | Server Management')
         .addFields(
         { name: `${prefix}addrole <user> <role>`, value: 'Adds a role to the user mentioned'},
@@ -105,7 +105,7 @@ let helpMenu = new Menu(message.channel, message.author.id, [
         content: new MessageEmbed()
         .setTitle('Command list')
         .setFooter('Page 5/12 | Utilities')
-        .setThumbnail('https://cdn.discordapp.com/attachments/790147784266481674/795832330215620648/Polar.png')
+        .setThumbnail('https://cdn.discordapp.com/attachments/792313563800666125/796522174378541066/image0.png')
         .setDescription(`Do \`${prefix}commandhelp <command>\` to show info about the command`)
         .setColor('RANDOM')
         .addFields(
@@ -127,7 +127,7 @@ let helpMenu = new Menu(message.channel, message.author.id, [
         content: new MessageEmbed()
         .setTitle('Command list')
         .setColor('RANDOM')
-        .setThumbnail('https://cdn.discordapp.com/attachments/790147784266481674/795832330215620648/Polar.png')
+        .setThumbnail('https://cdn.discordapp.com/attachments/792313563800666125/796522174378541066/image0.png')
         .setDescription(`Do \`${prefix}commandhelp <command>\` to show info about the command`)
         .setFooter('Page 6/12 | Reddit')
         .addFields(
@@ -149,7 +149,7 @@ let helpMenu = new Menu(message.channel, message.author.id, [
         content: new MessageEmbed()
         .setTitle('Command list')
         .setColor('RANDOM')
-        .setThumbnail('https://cdn.discordapp.com/attachments/790147784266481674/795832330215620648/Polar.png')
+        .setThumbnail('https://cdn.discordapp.com/attachments/792313563800666125/796522174378541066/image0.png')
         .setDescription(`Do \`${prefix}commandhelp <command>\` to show info about the command`)
         .setFooter('Page 7/12 | Economy')
         .addFields(
@@ -170,7 +170,7 @@ let helpMenu = new Menu(message.channel, message.author.id, [
         content: new MessageEmbed()
         .setTitle('Command list')
         .setColor('RANDOM')
-        .setThumbnail('https://cdn.discordapp.com/attachments/790147784266481674/795832330215620648/Polar.png')
+        .setThumbnail('https://cdn.discordapp.com/attachments/792313563800666125/796522174378541066/image0.png')
         .setDescription(`Do \`${prefix}commandhelp <command>\` to show info about the command`)
         .setFooter('Page 8/12 | Emoji')
         .addFields(
@@ -195,7 +195,7 @@ let helpMenu = new Menu(message.channel, message.author.id, [
         content: new MessageEmbed()
         .setTitle('Command list')
         .setColor('RANDOM')
-        .setThumbnail('https://cdn.discordapp.com/attachments/790147784266481674/795832330215620648/Polar.png')
+        .setThumbnail('https://cdn.discordapp.com/attachments/792313563800666125/796522174378541066/image0.png')
         .setDescription(`Do \`${prefix}commandhelp <command>\` to show info about the command`)
         .setFooter('Page 9/12 | Games')
         .addFields(
@@ -214,7 +214,7 @@ let helpMenu = new Menu(message.channel, message.author.id, [
         name: "Leveling",
         content: new MessageEmbed()
         .setTitle('Command list')
-        .setThumbnail('https://cdn.discordapp.com/attachments/790147784266481674/795832330215620648/Polar.png')
+        .setThumbnail('https://cdn.discordapp.com/attachments/792313563800666125/796522174378541066/image0.png')
         .setColor('RANDOM')
         .setDescription(`Do \`${prefix}commandhelp <command>\` to show info about the command`)
         .setFooter('Page 10/12 | Leveling')
@@ -233,8 +233,8 @@ let helpMenu = new Menu(message.channel, message.author.id, [
         content: new MessageEmbed()
         .setTitle('Command list')
         .setDescription(`Do \`${prefix}commandhelp <command>\` to show info about the command`)
-        .setFooter('Page 10/12 | Ratings')
-        .setThumbnail('https://cdn.discordapp.com/attachments/790147784266481674/795832330215620648/Polar.png')
+        .setFooter('Page 11/13 | Ratings')
+        .setThumbnail('https://cdn.discordapp.com/attachments/792313563800666125/796522174378541066/image0.png')
         .setColor('RANDOM')
         .addFields(
         { name: `${prefix}gay <user>`, value: 'Shows how gay user is'},
@@ -252,9 +252,9 @@ let helpMenu = new Menu(message.channel, message.author.id, [
         content: new MessageEmbed()
         .setTitle('Command list')
         .setDescription(`Do \`${prefix}commandhelp <command>\` to show info about the command`)
-        .setFooter('Page 11/12 | Math')
+        .setFooter('Page 12/13 | Math')
         .setColor('RANDOM')
-        .setThumbnail('https://cdn.discordapp.com/attachments/790147784266481674/795832330215620648/Polar.png')
+        .setThumbnail('https://cdn.discordapp.com/attachments/792313563800666125/796522174378541066/image0.png')
         .addFields(
         { name: `${prefix}add <num1> <num2>`, value: 'Adds numbers inputted'},
         { name: `${prefix}subtract <num1> <num2>`, value: 'Subtracts number inputted'},
@@ -271,9 +271,9 @@ let helpMenu = new Menu(message.channel, message.author.id, [
         name: "Others",
         content: new MessageEmbed()
         .setTitle('Command list')
-        .setThumbnail('https://cdn.discordapp.com/attachments/790147784266481674/795832330215620648/Polar.png')
+        .setThumbnail('https://cdn.discordapp.com/attachments/792313563800666125/796522174378541066/image0.png')
         .setDescription(`Do \`${prefix}commandhelp <command>\` to show info about the command`)
-        .setFooter('Page 12/12 | Others')
+        .setFooter('Page 13/13 | Others')
         .setColor('RANDOM')
         .addFields(
         { name: `${prefix}ascii <text>`, value: 'Turn inputted text to ascii'},
