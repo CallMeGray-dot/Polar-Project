@@ -4,7 +4,7 @@ const util = require('minecraft-server-util');
 module.exports = {
     commands: ['mss', 'minecraftserverstatus'],
     description: 'Shows minecraft server status',
-    usage: 'ip',
+    usage: '<ip>',
     callback: async (message, args) => {
 const ip = message.content.split(' ').slice(1).join(' ');
 if(!ip) return message.reply('¡Debes colocar una ip de un servidor de minecraft!')
