@@ -218,6 +218,7 @@ let helpMenu = new Menu(message.channel, message.author.id, [
         { name: `${prefix}amonguscode`, value: 'Sends the game info (amongus)'},
         { name: `${prefix}tictactoe <user>`, value: 'Starts a tictactoe game with the user mentiones'},
         { name: `${prefix}waterdrop`, value: 'Starts a waterdrop game'},
+        { name: `${prefix}minecraftserverstatus <ip-of-server>`, value: 'Shows minecraft server status'},
 )
         ,
         reactions:{  
