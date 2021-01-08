@@ -4,6 +4,7 @@ const botPrefix = require('discord-prefix')
 module.exports = {
     commands: ['giveaway', 'gstart', 'giveawaystart'],
     description: 'Starts a new giveaway',
+    permissions: ['ADMINISTRATOR'],
     callback: (message, args) => {
         const prefix = botPrefix.getPrefix(message.guild.id);
         if (!message.guild) return;
