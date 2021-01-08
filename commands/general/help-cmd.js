@@ -94,7 +94,7 @@ let helpMenu = new Menu(message.channel, message.author.id, [
         .addFields(
         { name: `${prefix}addrole <user> <role>`, value: 'Adds a role to the user mentioned'},
         { name: `${prefix}removerole <user> <role>`, value: 'Removes a role from the user mentioned'},
-        { name: `${prefix}giveaway <duration> <prize>`, value: 'Starts a new giveaway'},
+        { name: `${prefix}giveaway`, value: 'Starts a new giveaway'},
         { name: `${prefix}lock <role>`, value: 'Locks the channel role mentioned'},
         { name: `${prefix}unlock <role>`, value: 'Unlocks the role mentioned'},
         { name: `${prefix}purge <2-100>`, value: 'Clears amount of messages inputted'}
