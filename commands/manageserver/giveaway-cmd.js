@@ -35,7 +35,7 @@ module.exports = {
                     errors: ['time']
                 });
             } catch (ex) {
-                message.channel.send("You have not provided an answer within 60 seconds. please type \"!giveaway\" to try again.");
+                message.channel.send("You have not provided an answer within 60 seconds. please try again.");
                 break;
             }
             if (msg.first().content.toLowerCase().trim() === 'cancel') {
@@ -58,10 +58,10 @@ module.exports = {
                     } else {
                         let milliseconds = ms(args)
                         if (!milliseconds) {
-                            message.channel.send('Incorrect Syntax! Please give a correct time!')
+                            message.channel.send('Incorrect Syntax! Please give a correct time! please try again')
                         } else {
                             if (milliseconds < 60000 || milliseconds > 1209600000) {
-                                return message.channel.send('Giveaways must be at least 1 minute long and may not take over 2 weeks!')
+                                return message.channel.send('Giveaways must be at least 1 minute long and may not take over 2 weeks!\nGiveaway cancelled')
                             } else {
                                 time = ms(milliseconds, {
                                     long: true
