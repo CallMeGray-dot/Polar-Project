@@ -9,7 +9,7 @@ module.exports = {
 
         figlet.text(textToTurnASCII, (err, text) => {
             if (err) return msg.channel.send(err);
-            message.channel.send(`\`\`\` ${text.trimRight()} \`\`\``);
+            message.channel.send(`\`\`\` ${text.trimRight()} \n\n\n\n\`\`\``);
         })
     }
 }

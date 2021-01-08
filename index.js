@@ -1,7 +1,7 @@
 // Crucial Packages
 require('dotenv').config()
 const Discord = require('discord.js')
-const client = new Discord.Client()
+const client = new Discord.Client({ ws: { properties: { $browser: "Discord Android" }} })
 const botPrefix = require('discord-prefix')
 const welcome = require('./util/welcome')
 const { levelSys } = require('./util/features')
@@ -22,8 +22,7 @@ client.on('ready', () => {
     client.user.setPresence({
       activity: {
         name: `p!help • ${client.guilds.cache.size} servers`,
-        type: 'STREAMING',
-        url: 'https://twitch.tv/callmegraythegr8'
+        type: 'LISTENING'
       }
     })
     welcome(client)
@@ -58,8 +57,7 @@ client.on('guildCreate', guild => {
 client.user.setPresence({
    activity: {
       name: `p!help • ${client.guilds.cache.size} servers`,
-      type: 'STREAMING',
-        url: 'https://twitch.tv/callmegraythegr8'
+      type: 'LISTENING'
     }
   })
 })
@@ -69,8 +67,7 @@ client.on('guildDelete', guild => {
 client.user.setPresence({
     activity: {
       name: `p!help • ${client.guilds.cache.size} servers`,
-      type: 'STREAMING',
-        url: 'https://twitch.tv/callmegraythegr8'
+      type: 'LISTENING',
     }
   })
 })    

@@ -6,7 +6,7 @@ module.exports = {
     usage: null,
     minArgs: 0,
     maxArgs: 0,
-    permissions: ['MANAGE_MESSAGES'],
+    permissions: ['MANAGE_WEBHOOKS'],
   callback: async (message) => {
     let customEmbed = new MessageEmbed()
     const embed = new MessageEmbed()
