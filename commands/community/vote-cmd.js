@@ -11,7 +11,7 @@ module.exports = {
   callback: (message) => {
     const vote = new MessageEmbed()
       .setTitle('Vote The Bot!')
-      .setDescription('[Vote For It On Botrix](https://botrix.cc/bots/788911823969583175)')
+      .setDescription('[Vote For It On Botrix](https://botrix.cc/bots/788911823969583175)\n[Vote For It On TopGG](https://top.gg/bot/788911823969583175)')
       .setColor('#FF8C00')
       .setFooter('And don\'t forget to vote!')
 
