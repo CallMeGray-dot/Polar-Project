@@ -34,6 +34,8 @@
     "some-random-cat": "^2.2.0",
     "randomstring": "^1.1.5",
     "node-fetch": "^2.6.1",
-    "discord.js-menu": "^2.3.1"
+    "discord.js-menu": "^2.3.1",
+    "minecraft-server-util": "^3.4.2",
+    "dblapi.js": "^2.4.0"
   }
 }

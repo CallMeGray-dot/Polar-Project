@@ -18,6 +18,7 @@ let helpMenu = new Menu(message.channel, message.author.id, [
         .setColor('RANDOM')
         .addFields(
         { name: `${prefix}help`, value: 'Shows all commands in a list'},
+        { name: `${prefix}googlesearch <search>`, value: 'Searches on google'},
         { name: `${prefix}ping`, value: 'Shows latency of API and your ping'},
         { name: `${prefix}serverinfo`, value: 'Shows server info of the guild'},
         { name: `${prefix}sourcecode`, value: 'Shows bots source code in github'},
@@ -121,7 +122,8 @@ let helpMenu = new Menu(message.channel, message.author.id, [
         { name: `${prefix}serverinvite [permanent]`, value: 'Makes a server invite'},
         { name: `${prefix}stealemoji <emoji>`, value: 'Steals the emoji inputted'},
         { name: `${prefix}embed`, value: 'Makes a new embed'},
-        { name: `${prefix}snipe`, value: 'Shows the recently deleted message'}
+        { name: `${prefix}snipe`, value: 'Shows the recently deleted message'},
+        { name: `${prefix}covidcases <country/all>`, value: 'Shows how many covid cases is in the country'}
 )
         ,
         reactions:{  
