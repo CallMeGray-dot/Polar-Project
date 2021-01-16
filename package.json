@@ -36,6 +36,8 @@
     "node-fetch": "^2.6.1",
     "discord.js-menu": "^2.3.1",
     "minecraft-server-util": "^3.4.2",
-    "dblapi.js": "^2.4.0"
+    "node-kitsu": "^1.1.1",
+    "animequotes": "^1.1.2",
+    "atob": "^2.1.2"
   }
 }
