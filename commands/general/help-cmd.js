@@ -122,7 +122,6 @@ let helpMenu = new Menu(message.channel, message.author.id, [
         { name: `${prefix}serverinvite [permanent]`, value: 'Makes a server invite'},
         { name: `${prefix}stealemoji <emoji>`, value: 'Steals the emoji inputted'},
         { name: `${prefix}embed`, value: 'Makes a new embed'},
-        { name: `${prefix}snipe`, value: 'Shows the recently deleted message'},
         { name: `${prefix}covidcases <country/all>`, value: 'Shows how many covid cases is in the country'}
 )
         ,
