@@ -6,7 +6,6 @@ const botPrefix = require('discord-prefix')
 const welcome = require('./util/welcome')
 const { levelSys } = require('./util/features')
 const chatbot = require('./util/chatbot')
-const vote = require('./util/vote')
 
 // Command Handling
 const path = require('path')
@@ -29,7 +28,6 @@ client.on('ready', () => {
     welcome(client)
     levelSys(client)
     chatbot(client)
-    vote(client)
   })
 
     
