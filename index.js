@@ -6,6 +6,7 @@ const botPrefix = require('discord-prefix')
 const welcome = require('./util/welcome')
 const { levelSys } = require('./util/features')
 const chatbot = require('./util/chatbot')
+const vote = require('./util/vote')
 
 // Command Handling
 const path = require('path')
@@ -28,6 +29,7 @@ client.on('ready', () => {
     welcome(client)
     levelSys(client)
     chatbot(client)
+    vote(client)
   })
 
     
@@ -78,12 +80,6 @@ client.on('guildMemberAdd', (member, guild) => {
   }
 })
    
-    //covid cases, leveling and prefix
-const axios = require('axios');
-const countries = require("./countries.json");
-const url = 'https://api.covid19api.com/total/country/'; 
-const WAKE_COMMAND = `!cases`;
-
 client.on('message', async (msg) => {
   const content = msg.content.split(/[ ]+/);
   const prefix = botPrefix.getPrefix(msg.guild.id);
@@ -112,24 +108,7 @@ client.on('message', async (msg) => {
       .setThumbnail(client.user.displayAvatarURL({ size: 4096, dynamic: true }))
       msg.channel.send(embed)
   }
-  if (content[0] === WAKE_COMMAND) {
-    if (content.length > 2) {
-      msg.reply("Too many arguments...")
-    }
-    else if (content.length === 1) {
-      msg.reply("Not enough arguments")
-    }
-    else if (!countries[content[1]]) {
-      msg.reply("Wrong country format")
-    }
-    else {
-      const slug = content[1]
-      const payload = await axios.get(`${url}${slug}`)
-      const covidData = payload.data.pop();
-      msg.reply(`Confirmed: ${covidData.Confirmed}, Deaths: ${covidData.Deaths}, Recovered: ${covidData.Recovered}, Active: ${covidData.Active} `)
-    }
-  }
-});
+})
 client.on('guildCreate', guild =>{
   const channelId = '792314257428971540';
   const channel = client.channels.cache.get(channelId); //This Gets That Channel
@@ -157,14 +136,4 @@ client.on('guildDelete', guild =>{
       .setFooter(`I'm In ${client.guilds.cache.size} Guilds Now!`);
   channel.send(embed);
 });
-const snipes = require("./snipe.json")
-const snip = require("./snipes.js")
-
-client.on('messageDelete',async message => {
-  const args = message.content.split(" ");
- const author = message.author.id;
- const time = message.createdAt;
-  const icon = message.author.displayAvatarURL();
-  snip.run(message,args,client,author,time,icon) 
-})
 client.login(process.env.TOKEN)
