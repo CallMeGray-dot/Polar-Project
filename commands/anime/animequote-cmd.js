@@ -46,7 +46,7 @@ if (quote.length>1){
     const embed = new MessageEmbed()
     .setColor("RANDOM")
     .addField(`Quoted from ${quote.anime}`,`**"${quote.quote}"**\n\n-*${quote.name}*`)
-    .setFooter(`Anime Quote || by: Killashawt#6969`)
+    .setFooter(`Anime Quote`)
     .setTimestamp()
 
     if (errors.length>0) {
