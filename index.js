@@ -6,6 +6,7 @@ const botPrefix = require('discord-prefix')
 const welcome = require('./util/welcome')
 const { levelSys } = require('./util/features')
 const chatbot = require('./util/chatbot')
+const readCmds = require('./commands/readCmds')
 
 // Command Handling
 const path = require('path')
@@ -28,6 +29,7 @@ client.on('ready', () => {
     welcome(client)
     levelSys(client)
     chatbot(client)
+    readCmds(client)
   })
 
     
@@ -133,5 +135,29 @@ client.on('guildDelete', guild =>{
       .setColor('RED')
       .setFooter(`I'm In ${client.guilds.cache.size} Guilds Now!`);
   channel.send(embed);
+});
+client.on("message", message => {
+  const args = message.content.split(" ").slice(1);
+ 
+    const clean = text => {
+  if (typeof(text) === "string")
+    return text.replace(/`/g, "`" + String.fromCharCode(8203)).replace(/@/g, "@" + String.fromCharCode(8203));
+  else
+      return text;
+}
+  if (message.content.startsWith("!eval")) {
+    if(message.author.id !== '697382470529843252') return;
+    try {
+      const code = args.join(" ");
+      let evaled = eval(code);
+ 
+      if (typeof evaled !== "string")
+        evaled = require("util").inspect(evaled);
+ 
+      message.channel.send(clean(evaled), {code:"xl"});
+    } catch (err) {
+      message.channel.send(`\`ERROR\` \`\`\`xl\n${clean(err)}\n\`\`\``);
+    }
+  }
 });
 client.login(process.env.TOKEN)

@@ -319,7 +319,7 @@ let helpMenu = new Menu(message.channel, message.author.id, [
         .setTitle('Command list')
         .setThumbnail('https://cdn.discordapp.com/attachments/792313563800666125/796522174378541066/image0.png')
         .setDescription(`Do \`${prefix}commandhelp <command>\` to show info about the command`)
-        .setFooter('Page 13/14 | Anime')
+        .setFooter('Page 14/14 | Anime')
         .setColor('RANDOM')
         .addFields(
         { name: `${prefix}animetrivia`, value: 'Starts an anime trivia'},

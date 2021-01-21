@@ -4,8 +4,6 @@ const ms = require('ms')
 module.exports = {
     commands: ['giveaway'],
     description: 'Start a giveaway for the server members!',
-    minArgs: 0,
-    maxArgs: 0,
     permissions: ['ADMINISTRATOR'],
     callback: async (message, args) => {
         const bot = message.client.user.id
